@@ -1,0 +1,80 @@
+:root{
+    /* Pallete */
+    --primary:#4d4d4d;
+    --secondary:#ffffff;
+    --ternary:#ff5555;
+    --quaternary:#ffe680;
+    --black:#000000;
+
+}
+body{
+    /* Fullscreen */
+    height: 100vh;
+    margin: 0px;
+    /* Unified font */
+    font-family: "Noto Sans KR",sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    /* Display */
+    display: flex;
+
+}
+.font-heavy{
+    font-family: "Noto Sans KR",sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.font-light{
+    font-family: "Noto Sans KR",sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+.level-selector,.middle-section{
+    display: flex;
+    flex-direction: column;
+    
+}
+.level-selector{
+    width: 25vw;
+    background-color: black;
+}
+.middle-section{
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+}
+.play-btn{
+    border: 2px solid black;
+    border-radius: 15%;
+    font-size: 3em;
+    padding: 5%;
+    min-width: 20vw;
+    min-height: 5vh;
+}
+.card-gallary{
+    position: relative;
+    min-height: 40vh;
+    margin-bottom: 10vh;
+}
+.card-gallary .skull{
+    width: 20vw;
+    aspect-ratio: 3.5/4;
+    position: absolute;
+}
+.card-gallary *{
+    position: absolute;
+}
+
+.preloader{
+    position: absolute;
+    z-index: 9999;
+    background-color: var(--black);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
